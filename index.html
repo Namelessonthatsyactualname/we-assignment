@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="loginForm" class="form-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" placeholder="Enter your username" required>
+
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+                <p class="message">Not registered? <a href="#" id="goToRegister">Create an account</a></p>
+                <p class="message">Forgot your password? <a href="#" id="goToForgotPassword">Reset password</a></p>
+            </form>
+        </div>
+
+        <div id="registerForm" class="form-container hidden">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="registerUsername">Username:</label>
+                <input type="text" id="registerUsername" placeholder="Choose a username" required>
+
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" placeholder="Enter your email" required>
+
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" placeholder="Choose a password" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+
+                <button type="submit">Register</button>
+                <p class="message">Already registered? <a href="#" id="goToLogin">Login here</a></p>
+            </form>
+        </div>
+
+        <div id="forgotPasswordForm" class="form-container hidden">
+            <h2>Forgot Password</h2>
+            <form id="forgotPasswordForm">
+                <label for="forgotEmail">Email:</label>
+                <input type="email" id="forgotEmail" placeholder="Enter your email" required>
+
+                <button type="submit">Reset Password</button>
+                <p class="message">Remembered your password? <a href="#" id="goToLoginFromForgot">Login now</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
